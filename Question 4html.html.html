@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>html file 8</title>
+    </head>
+    <script>
+        var number=0;
+        function incFun(){
+            if(number<100){
+                number++;
+            }
+            else if(number=100){
+                number = 0;
+            }
+           document.getElementById("show").innerHTML = number;
+        }
+        function decFun(){
+            if(number>0){
+                --number;
+            }
+            else if(number =0){
+                number =100
+            }
+            document.getElementById("show").innerHTML= number;
+        }
+    </script>
+    <style>
+       
+    </style>
+
+    <body>
+        <fieldset style="background-color: seashell;" align="center" width="70%" height="80%">
+            <legend  align="center"  style=background-color:cadetblue>Counter Button </legend>
+            <input  type="button" value="Increment"  onclick="incFun()">
+             <label id="show"></label>
+            <input   type="button" value="Decrement" onclick="decFun()">
+        </fieldset>
+    </body>
+</html>
